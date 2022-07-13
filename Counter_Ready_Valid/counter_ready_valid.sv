@@ -27,7 +27,7 @@ module counter_ready_valid (
 
 
   
-  // --------------------------------- FORMAL VERIFCATION -------------------//
+  // --------------------------------- FORMAL VERIFICATION -------------------//
   //
   
 	`ifdef FORMAL
