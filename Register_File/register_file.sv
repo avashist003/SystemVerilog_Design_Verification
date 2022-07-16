@@ -10,27 +10,19 @@ module register_file
     // locations = 2**DEPTH
     parameter DEPTH = 2
    ) (
-    clk,
-    rst_n,
+    input logic clk,
+    input logic rst_n,
     // read ports
-    in_rd_addr1,
-    in_rd_addr2,
-    out_rd_data1,
-    out_rd_data2,
+    input logic [DEPTH-1:0] in_rd_addr1,
+    input logic [DEPTH-1:0] in_rd_addr2,
+    output logic [DATA_WIDTH-1:0] out_rd_data1,
+    output logic [DATA_WIDTH-1:0] out_rd_data2,
     // write enable
-    in_we,
+    input logic  in_we,
     // write ports
-    in_wr_addr,
-    in_wr_data
+    input logic [DEPTH-1:0] in_wr_addr,
+    input logic [DATA_WIDTH-1:0] in_wr_data
   );
-
-  input logic clk, rst_n;
-  input logic in_we;
-  input logic [DEPTH-1:0] in_wr_addr;
-  input logic [DATA_WIDTH-1:0] in_wr_data;
-
-  input logic [DEPTH-1:0] in_rd_addr1, in_rd_addr2;
-  output logic [DATA_WIDTH-1:0] out_rd_data1, out_rd_data2;
 
   // Registers in our register-file
   logic [DATA_WIDTH-1:0] reg_file [2**DEPTH-1:0];
