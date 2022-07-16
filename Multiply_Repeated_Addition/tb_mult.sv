@@ -34,7 +34,8 @@ module test;
 
   end
 
-  always #1 clk = ~clk;
+  // 50 MHz clock
+  always #20 clk = ~clk;
   
 
 endmodule
