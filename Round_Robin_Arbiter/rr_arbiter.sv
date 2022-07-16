@@ -1,7 +1,7 @@
 //
 // 4 Input Round-Robin Arbiter
 //
-module round_robin_arbiter
+module rr_arbiter
   (
     input logic clk,
     input logic rst,
