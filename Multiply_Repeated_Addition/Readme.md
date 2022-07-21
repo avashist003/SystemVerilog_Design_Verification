@@ -1,3 +1,5 @@
+# RTL Design of Multiplication using Repeated Addition Algorithm [SystemVerilog]
+
 Multiplication is one of the fundamental arithmetic operation that most of the hardware need to implement.
 Multiplication can be done suing many algorithms, in this design I present hardware design using a simple
 repeated addition algorithm to multiply two 4-bit unsigned input integers.
