@@ -7,7 +7,7 @@ The arbiter grant access to the inputs in a round-robin fashion.
 
 Here's EDAPlaygroud link to run the implemented system: https://www.edaplayground.com/x/knck
 
-Below is a snapshop of timing waveform with the implement design.
+Below is a snapshop of timing waveform with the implemented design.
 
 
 ![My Image](rr.png)
