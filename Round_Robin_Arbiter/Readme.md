@@ -1,3 +1,5 @@
+# RTL Design of a 4-I/P Round Robin Arbiter [SystemVerilog]
+
 In many hardware designs we need a module that can arbitrate between multiple inputs (requests) to enable sharing of a common resource.
 Arbiter implements that functionality.
 
