@@ -1,4 +1,5 @@
-# Pipleline Approach for High Speed Design
+# Pipleline RTL Implementation of a Cubic Polynomial Function [SystemVerilog]
+
 Pipelining is one of most common and powerful approach for designing high speed ASIC/FPGA logic.
 
 Here, I design a cubic equation y = x^3 + k, where x is the input and k is a constant value.
