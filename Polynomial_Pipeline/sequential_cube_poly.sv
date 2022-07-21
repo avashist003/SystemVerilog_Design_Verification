@@ -12,21 +12,24 @@ module seq_cube_poly (clk, rst_n, x_in, result_out, start, finish);
   output logic [5:0] result_out;
 
   logic [1:0] counter;
+  logic [5:0] tmp;
 
   assign finish = (counter == '0);
 
   always_ff@(posedge clk, negedge rst_n) begin
     if (!rst_n) begin
       counter <= '0;
+      tmp <= '0;
     end
     else begin
       if (start) begin
         counter <= 2'b10;
         result_out <= x_in;
+        tmp <= x_in;
       end
       else if (!finish) begin
         counter <= counter - 1'b1;
-        result_out <= x_in * result_out;
+        result_out <= tmp * result_out;
       end
     end
   end
