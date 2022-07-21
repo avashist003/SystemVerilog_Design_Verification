@@ -15,6 +15,6 @@ But we get the next output in the fifth clock (0x1c) and so on.
 ![My Image](waveform_pipeline.png)
 
 A sequential implementation of y = x^3 is also designed, for each input it takes three clock to produce an output.
-Below we show the waveform for the sequential logic of ploynomial. We see thre is 3 clokc cyles between two outputs 0x08 and 0x1b.
+Below we show the waveform for the sequential logic of ploynomial. We see a 3-clock cyles delay between the outputs 0x08 and 0x1b.
 
 ![My Image](seq_cubic.png)
