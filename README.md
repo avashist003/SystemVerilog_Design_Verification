@@ -6,3 +6,5 @@ In this repository I include various RTL designs using SystemVerilog HDL. Futher
 This will follow my #100DaysofRTL challenge on [LinkedIn](https://www.linkedin.com/feed/hashtag/?keywords=100daysofrtl).
 
 Each of the design blocks contain their own separate documention.
+
+- This repository is continuously maintained and updated. When you fork, make sure to pull frequently.
